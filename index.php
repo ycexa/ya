@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link type="text/css" rel="stylesheet" media="all" href="./style.css" />
-        <script type="text/javascript" src="./jquery.min.js"></script>
-        <script type="text/javascript" src="./script.js"></script>
+        <link type="text/css" rel="stylesheet" media="all" href="/style.css" />
+        <script type="text/javascript" src="/jquery.min.js"></script>
+        <script type="text/javascript" src="/script.js"></script>
         <title>Пример страницы</title>
     </head>
     <body>
