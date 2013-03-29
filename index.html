@@ -1,12 +1,25 @@
 <!DOCTYPE>
 <html>
-<head></head>
+<head>
+    <meta charset="utf-8" />
+</head>
 <body>
-    <a href="#" id="a">Нажми меня!</a>
+    <a href="#" id="a">Find George</a>
     <script type="text/javascript">
         var href = document.getElementById('a');
         href.onclick = function() {
-            alert('ok');
+            // find all contacts with 'Bob' in any name field
+            var options = new ContactFindOptions();
+            var onSuccess = function(contacts) {
+                alert('Found ' + contacts.length + ' contacts.');
+            };
+            var onError = function(contactError) {
+                alert('onError!');
+            };
+            options.filter = "George";
+            options.multiple=true; 
+            var fields = ["displayName", "name"];
+            navigator.contacts.find(fields, onSuccess, onError, options);
             return false;
         };
     </script>
